@@ -5,3 +5,4 @@ set XDG_DATA_DIRS /var/lib/snapd/desktop/:$XDG_DATA_DIRS
 alias ls="exa"
 alias emacs="emacs -nw"
 alias please="sudo"
+alias copy="xclip -sel clip"
