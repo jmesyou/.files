@@ -1,0 +1,6 @@
+
+# aliases
+
+aliases['please'] = "sudo"
+aliases['emacs']  = "emacs -nw"
+aliases['ls']     = "exa"
