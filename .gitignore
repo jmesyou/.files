@@ -1,8 +1,2 @@
-# ignore everything
-/*
-# find dotfiles 
-!.*
-!.config/fish/*
-!.config/fish/functions/*
-!.config/kitty/*
-!.config/kitty/kitty-themes/*
+# ignore self
+.files
