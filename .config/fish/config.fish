@@ -8,6 +8,7 @@ end
 alias please='sudo'
 alias emacs='emacs -nw'
 alias ls='exa'
+alias docker='podman'
 
 # Dot file configurator
 function dotfiles --description 'dot file configuration'
