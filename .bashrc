@@ -12,9 +12,8 @@ then
 fi
 export PATH
 
-if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
-    GIT_PROMPT_ONLY_IN_REPO=1
-    source $HOME/.bash-git-prompt/gitprompt.sh
+if [ -f "$HOME/.liquidprompt/liquidprompt" ]; then
+    source $HOME/.liquidprompt/liquidprompt
 fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
