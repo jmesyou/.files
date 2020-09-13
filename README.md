@@ -26,12 +26,12 @@ git clone --bare <git-repo-url> $HOME/.files
 and then we can checkout 
 
 ```bash
-config checkout
+dotfiles checkout
 ```
 
 If for some reason, we have some local dotfiles in our $HOME (which we will) and we don't care about them (which we won't),
 we can overwrite it with 
 ```
-config fetch --all
-config reset --hard origin/master
+dotfiles fetch --all
+dotfiles reset --hard origin/master
 ```
