@@ -7,20 +7,20 @@
 The following alias must be added to the shell 
 
 ```bash
-alias config='usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotfiles='usr/bin/git --git-dir=$HOME/.files/ --work-tree=$HOME'
 ```
 
-In this case, `config` is the alias for `git` for the dotfiles and `.cfg` is the `.git` directory. So for the rest 
-of these instructions, we'll juse use `config` and `.cfg`.
+In this case, `dotfiles` is the alias for `git` for the dotfiles and `.files` is the `.git` directory. So for the rest 
+of these instructions, we'll juse use `dotfiles` and `.files`.
 
-Ignore the `.cfg` `git` directory.
+Ignore the `.files` `git` directory.
 ```bash
-echo ".cfg" >> .gitignore
+echo ".files" >> .gitignore
 ```
 
 Then we clone the master repository
 ```bash
-git clone --bare <git-repo-url> $HOME/.cfg
+git clone --bare <git-repo-url> $HOME/.files
 ```
 
 and then we can checkout 
