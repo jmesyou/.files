@@ -41,4 +41,4 @@ fi
 alias emacs='emacs -nw';
 alias please=sudo;
 alias ls=exa;
-alias config='/usr/bin/git --git-dir=$HOME/.files/ --work-tree=$HOME';
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.files/ --work-tree=$HOME';
