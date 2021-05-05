@@ -30,15 +30,19 @@ export PATH
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-if [ -f `which powerline-daemon` ]; then
-    powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-    . /usr/share/powerline/bash/powerline.sh
-fi
-
 # User specific aliases and functions
 alias emacs='emacs -nw';
 alias please=sudo;
 alias ls=exa;
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.files/ --work-tree=$HOME';
+alias ssh='kitty +kitten ssh';
+
+# initialize shell environment
+eval "$(starship init bash)"
+# initialize ocaml environment
+eval `opam config env`
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/jyou/.sdkman"
+[[ -s "/home/jyou/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jyou/.sdkman/bin/sdkman-init.sh"
