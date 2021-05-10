@@ -30,3 +30,4 @@
    '("melpa" . "http://melpa.milkbox.net/packages/")
    t))
 
+(setq-default indent-tabs-mode nil)
