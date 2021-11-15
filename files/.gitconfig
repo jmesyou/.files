@@ -9,7 +9,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 [core]
-	editor = emacs
+	editor = vim
 [user]
 	name = James You
 	email = james.you@protonmail.com

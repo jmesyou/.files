@@ -1,0 +1,13 @@
+# .bash-aliases
+
+# User specific aliases and functions
+alias emacs='emacs -nw';
+alias please=sudo;
+
+if type kitty &> /dev/null ; then 
+    alias ls=exa;
+fi 
+
+if type kitty &> /dev/null ; then   
+    alias ssh='kitty +kitten ssh';
+fi

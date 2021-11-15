@@ -4,9 +4,6 @@ if type  starship &> /dev/null ; then
     eval $(starship init zsh)
 fi
 
-# setup the git configuration for terminal configuration
-alias dotfiles="git --git-dir=$HOME/.files/ --work-tree=$HOME"
-
 # aliases
 alias emacs="emacs -nw"
 alias please="sudo"
