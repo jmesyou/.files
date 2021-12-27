@@ -17,3 +17,10 @@ export PATH
 
 # initialize shell environment
 eval "$(starship init bash)"
+
+# User specific aliases and functions
+
+if [ -f ~/.bash-aliases ]; then 
+    . ~/.bash-aliases
+fi 
+
