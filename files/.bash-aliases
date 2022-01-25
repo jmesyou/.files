@@ -7,6 +7,6 @@ if type exa &> /dev/null ; then
     alias ls='exa';
 fi 
 
-if type kitty &> /dev/null ; then   
+if [[ "$TERM" == "xterm-kitty" ]] ; then   
     alias ssh='kitty +kitten ssh';
 fi
